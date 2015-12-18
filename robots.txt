@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /icons/detail/
+Disallow: /fonts/MellowGlyph.ttf
+Disallow: /fonts/MellowGlyph.eot
+Allow: /index.html
+Allow: /examples/index.html
+Allow: /getstarted/index.html
+Allow: /license/index.html
+Sitemap: /sitemap.xml
