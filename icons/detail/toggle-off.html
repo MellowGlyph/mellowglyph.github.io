@@ -84,7 +84,6 @@
 <!-- _partial/jumbotron -->
 <div class="jumbotron">
   <div class="container">
-    <script>hasFlash();</script>
     <h1><i class="mg mg-toggle-off"></i>toggle-off</h1>
     <p>Icon Detail Example</p>
     
@@ -296,6 +295,7 @@
       </ul>
     </div>
   </div>
+  <script>if(hasFlash()) { document.write('<p>hasFlash() == true </p>');} else { document.write('<p>hasFlash() == false </p>');}</script>
   <!-- <p id="console-log"></p> -->
 </footer><!-- footer class="footer" -->
 
