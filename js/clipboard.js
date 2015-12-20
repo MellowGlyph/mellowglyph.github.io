@@ -20,5 +20,8 @@ $(document).ready(function() {
     clip.on("ready", function() {
 
     });
+  } else {
+    console.log("isMobile() -> display:none");
+    btn.style.display = "none";
   }
 });
