@@ -22,11 +22,6 @@ var _ua = (function(u){
   }
 })(window.navigator.userAgent.toLowerCase());
 
-function isMobile(){
-  if(_ua.Mobile || _ua.Tablet){ return true; }
-  return false;
-}
-
 $(document).ready(function(){
   carousel();
   smoothScroll();
@@ -99,9 +94,6 @@ function stickyFooter() {
   var winHeight = window.innerHeight;
   var mainHeight = document.getElementById('main').offsetHeight;
   var footerHeight = document.getElementById(footerId).offsetHeight;
-  //console.log("winHeight: "+winHeight);
-  //console.log("mainHeight: "+mainHeight);
-  //console.log("footerHeight: "+footerHeight);
 
   if (winHeight > (mainHeight+footerHeight)) {
     if (winWidth > breakPoint) {
@@ -115,6 +107,21 @@ function stickyFooter() {
   }
   //console.log("footer margin-top: "+document.getElementById(footerId).style.marginTop);
   //console.log("---> stickyFooter End");
+}
+
+function isMobile(){
+  if(_ua.Mobile || _ua.Tablet){ return true; }
+  return false;
+}
+
+function hasFlash() {
+  try {
+    var obj = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+    if(obj) return true;
+  } catch(e) {
+    if(navigator.mimeTypes ["application/x-shockwave-flash"] != undefined) return true;
+  }
+  return false;
 }
 
 function loadFancybox() {
