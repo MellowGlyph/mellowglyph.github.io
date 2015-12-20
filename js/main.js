@@ -24,12 +24,12 @@ var _ua = (function(u){
 
 $(document).ready(function(){
   carousel();
-  smoothScroll();
+  clickFunc();
   stickyFooter();
   $("#console-log").text(window.navigator.userAgent.toLowerCase());
 });
 
-function smoothScroll() {
+function clickFunc() {
   $(window).scroll(function(){
     var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
     if( scrollt >200 ){
@@ -41,6 +41,9 @@ function smoothScroll() {
   $("#gotop").click(function(){
     $("html,body").animate({scrollTop:"0px"},200);
     return false
+  });
+  $('.zc').click(function(){
+    alert("Copy to clipboard!");
   });
 }
 
@@ -116,8 +119,7 @@ function isMobile(){
 
 function hasFlash() {
   try {
-    var obj = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
-    if(obj) return true;
+    if(new ActiveXObject('ShockwaveFlash.ShockwaveFlash')) return true;
   } catch(e) {
     if(navigator.mimeTypes ["application/x-shockwave-flash"] != undefined) return true;
   }
