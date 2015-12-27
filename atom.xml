@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[MellowGlyph]]></title>
+  <subtitle><![CDATA[THE STANDARD CSS ICON FRAMEWORK]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="https://mellowglyph.github.io/"/>
+  <updated>2015-12-20T16:35:07.000Z</updated>
+  <id>https://mellowglyph.github.io/</id>
+  
+  <author>
+    <name><![CDATA[sirochro]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Release Notes]]></title>
+    <link href="https://mellowglyph.github.io/release-notes/"/>
+    <id>https://mellowglyph.github.io/release-notes/</id>
+    <published>2015-12-15T23:55:10.000Z</published>
+    <updated>2015-12-20T16:35:07.000Z</updated>
+    <content type="html"><![CDATA[<p></p><p class="lead">Welcome to the MellowGlyph release notes!</p><p></p>
+<section class="release"><dl><br><dt>December 21, 2015</dt><br><dd>Site update.</dd><br><dt>December 18, 2015</dt><br><dd>MellowGlyph 1.0.0-Beta Brand new Release.</dd><br></dl></section>]]></content>
+    <summary type="html">
+    <![CDATA[<p></p><p class="lead">Welcome to the MellowGlyph release notes!</p><p></p>
+<section class="release"><dl><br><dt>December 21, 2015</dt><br><]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
